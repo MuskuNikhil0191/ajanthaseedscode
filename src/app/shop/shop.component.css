@@ -1,0 +1,26 @@
+hr{
+    color:white;
+}
+.card{
+    border:none;
+}
+.modal.p{
+    font-weight:xx-large;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+@media screen and (min-width:576px){
+    .brand{
+        display:flex;
+        justify-content: center;
+        font-size:x-large;
+    }
+}
+@media screen and (max-width:576px){
+    .brand{
+        font-size:large;
+        display:flexwrap;
+    }
+}

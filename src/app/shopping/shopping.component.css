@@ -1,0 +1,13 @@
+hr{
+    color:white;
+}
+.card{
+    border:none;
+}
+.modal.p{
+    font-weight:xx-large;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}

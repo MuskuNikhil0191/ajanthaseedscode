@@ -1,0 +1,1043 @@
+<div class="bar">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="brand">
+                <a class="navbar-brand text-decoration-none">
+                    <span *ngIf="telugu" class="text-white" style="cursor:default;font-weight:bold;">అజంతా</span>
+                    <span *ngIf="english" class="text-white" style="cursor:default;font-weight:bold;">AJANTHA</span>
+                </a>
+                <div class="text-white" style="cursor:default;">Online Shopping Site</div>
+            </div>
+            <div class="form-inline d-flex ms-auto">
+                <div class="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="25" fill="currentColor" class="bi bi-globe text-white" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/></svg>
+                    <div class="dropdown-menu bg-dark">
+                        <button *ngIf="telugu" href="#" (click)="changetoenglish()" class="dropdown-item text-white">ఇంగ్లీష్</button>
+                        <button *ngIf="telugu" href="#" (click)="changetotelugu()" class="dropdown-item text-white">తెలుగు</button>
+                        <button *ngIf="english" href="#" (click)="changetoenglish()" class="dropdown-item text-white">English</button>
+                        <button *ngIf="english" href="#" (click)="changetotelugu()" class="dropdown-item text-white">Telugu</button>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="25" fill="currentColor" class="text-white bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                      <div class="dropdown-menu bg-dark">
+                        <button class="dropdown-item text-white" data-bs-toggle="modal" data-bs-target="#form">Login</button>
+                      </div>
+                </div>
+                <div class="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="25" fill="currentColor" class="text-white bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                      </svg>
+                    <div class="dropdown-menu bg-dark">
+                        <button class="dropdown-item text-white" data-bs-toggle="modal" data-bs-target="#form">Go to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#shopmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="shopmenu">
+                <ul class="nav navbar-nav">
+                    <hr style="color:black"><li><button data-bs-toggle="modal" data-bs-target="#form" class="btn btn-dark text-white">Login</button></li><hr style="color:black">
+                    <li><a class="btn btn-dark text-white" routerLink="/home" routerLinkActive="active">Back to Home</a>></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container jumbotron">
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#nidhigold"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="nidhigold">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-1౩0 నుండి 135 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-1౩0 to 135 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>ధాన్యం రకం</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Grain type</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-దొడ్డు రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Dhoddu rakam</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">    
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>మొక్కల ఎత్తు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop height</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-95 నుండి 100 సెం.మీ</p>
+                                                        <p *ngIf="english" class="types text-primary">-95 to 100 cm</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 నుండి 12 కిలోలు</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 to 12 Kg</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">  
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>లక్షణాలు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Highlights</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అధిక పిలకలు వచ్చును</p>
+                                                        <p *ngIf="english" class="types text-primary">-High Leverage</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>రోగ నిరోధక శక్తి</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Immunity</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అగ్గి తెగులు , దోమతట్టుకుంటుంది</p>
+                                                        <p *ngIf="english" class="types text-primary">-Smoke rot , mosquito tolerates</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>నిధి గోల్డ్</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Nidhi Gold</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#ajantha333"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="ajantha333">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-120 నుండి 130 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-120 to 130 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>ధాన్యం రకం</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Grain type</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-దొడ్డు రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Dhoddu rakam</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">    
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>మొక్కల ఎత్తు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop height</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-95 నుండి 100 సెం.మీ</p>
+                                                        <p *ngIf="english" class="types text-primary">-95 to 100 cm</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 నుండి 12 కిలోలు</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 to 12 Kg</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">  
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>లక్షణాలు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Highlights</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-గింజ గట్టి దనం ఎక్కువ</p>
+                                                        <p *ngIf="english" class="types text-primary">-High grain hardness</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>రోగ నిరోధక శక్తి</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Immunity</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అగ్గి తెగులు , దోమతట్టుకుంటుంది</p>
+                                                        <p *ngIf="english" class="types text-primary">-Smoke rot , tolerates mosquito</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>అజంతా -౩౩౩</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Ajantha -333</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#amangold"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="amangold">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-1౩0 నుండి 135 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-1౩0 to 135 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>ధాన్యం రకం</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Grain type</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-సన్న రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Sanna rakam</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">    
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>మొక్కల ఎత్తు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop height</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-110 నుండి 115 సెం.మీ</p>
+                                                        <p *ngIf="english" class="types text-primary">-110 to 105 cm</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 కిలోలు</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 Kg</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">  
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>లక్షణాలు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Highlights</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-సన్న రకాలలో అధిక దిగుబదినిచ్చును</p>
+                                                        <p *ngIf="english" class="types text-primary">-igh yielding in slender varieties</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>రోగ నిరోధక శక్తి</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Immunity</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-తెగుళ్లను తట్టుకుంటుంది</p>
+                                                        <p *ngIf="english" class="types text-primary">-Resistent to Pests</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>అమన్ గోల్డ్</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Aman Gold</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#saigold"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="saigold">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-140 నుండి 145 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-140 to 145 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>ధాన్యం రకం</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Grain type</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అతి సన్న రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Athi sanna rakam</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">    
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>మొక్కల ఎత్తు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop height</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-105 నుండి 110 సెం.మీ</p>
+                                                        <p *ngIf="english" class="types text-primary">-105 to 110 cm</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 కిలోలు</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 Kg</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">  
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>లక్షణాలు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Highlights</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అధిక ధర వచ్చు అతి సన్న రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-High cost giving slender variety</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>రోగ నిరోధక శక్తి</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Immunity</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-చీడ, పీడలను తట్టుకుంటుంది</p>
+                                                        <p *ngIf="english" class="types text-primary">-Tolerates pest infestation</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>సాయి గోల్డ్</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Sai Gold</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#annapurna"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="annapurna">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-1౩0 నుండి 140 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-1౩0 to 140 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>ధాన్యం రకం</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Grain type</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-అతి సన్న రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Athi sanna rakam</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">    
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>మొక్కల ఎత్తు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop height</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-105 నుండి 110 సెం.మీ</p>
+                                                        <p *ngIf="english" class="types text-primary">-105 to 110 cm</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 కిలోలు</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 Kg</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">  
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>లక్షణాలు</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Highlights</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-తినడానికి, దిగుబడికి అనువైన సన్న రకం</p>
+                                                        <p *ngIf="english" class="types text-primary">-Thin variety suitable for hight yielding and to eat</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>రోగ నిరోధక శక్తి</p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Immunity</p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-తెగుళ్లను తట్టుకుంటుంది</p>
+                                                        <p *ngIf="english" class="types text-primary">-Resistent to Pests</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>ఆన్నపూర్ణ-16</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Annapurna-16</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#super60"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="super60">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-100 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-100 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-25 నుండి 30 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-25 to 30 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>సూపర్ -60</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Super -60</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#jaya999"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="jaya999">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-100 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-100 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-27 నుండి 35 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-27 to 35 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>జయ -999</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Jaya -999</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#redjowar"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="redjowar">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-90 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-90 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-18 నుండి 26 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-18 to 26 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>Red Jowar</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Red Jowar</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#whitejowar"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="whitejowar">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-90 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-90 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-18 నుండి 26 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-18 to 26 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>White Jowawr</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>White Jowar</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+        <div class="row mt-5 mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#bajra288"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="bajra288">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-80 నుండి 90 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-80 to 90 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 నుండి 15 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 to 15 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>Bajra -288</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Bajra -288</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#bajra284"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="bajra284">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-80 నుండి 90 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-80 to 90 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 నుండి 15 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 to 15 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>Bajra -284</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Bajra -284</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-img-top">
+                        <button style="border:none;" data-bs-toggle="modal" data-bs-target="#bajra211"><img src="./assets/seeds.jpg" style="width:100%;" alt="img"></button>
+                        <div class="modal fade" id="bajra211">
+                            <div class="modal-dialog modal-dialog-centered modal-md modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 *ngIf="telugu" style="margin-left:5px;" class="text-secondary">ముఖ్యలక్షణాలు:</h3>
+                                        <h3 *ngIf="english" style="margin-left:5px;" class="text-secondary">Qualities:</h3><hr>
+                                        <button class="btn btn-danger" data-bs-dismiss="modal">X</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <img src="./assets/seeds.jpg" class="img-fluid">
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>పంటకాలం </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Crop-Period </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-80 నుండి 90 రోజులు</p>
+                                                        <p *ngIf="english" class="types text-primary">-80 to 90 Days</p>
+                                                    </div>
+                                                </div><hr>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary"><span style="font-weight:bold;">></span>విత్తనమోతాదు (ఎకరానికి) </p>
+                                                        <p *ngIf="english" class="types text-primary"><span style="font-weight:bold;">></span>Yielding (Per acre) </p>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p *ngIf="telugu" class="types text-primary">-10 నుండి 15 క్విన్టల్స్</p>
+                                                        <p *ngIf="english" class="types text-primary">-10 to 15 Quintals</p>
+                                                    </div>
+                                                </div><hr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-success" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                                        <button class="btn btn-primary"   data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#form">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div *ngIf="telugu" class="card-title text-center"><h2>Bajra -288</h2></div>
+                        <div *ngIf="english" class="card-title text-center"><h2>Bajra -288</h2></div><hr>
+                        <div class="card-text "><h4 class="text-center">$999</h4></div><hr>
+                        <button class="btn btn-success d-block mx-auto" data-bs-toggle="modal" data-bs-target="#form">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+    </div>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-dismiss="modal" id="form">
+        <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header text-decoration-underline">
+                    <h1 *ngIf="lform" class="d-block mx-auto">Login</h1>
+                    <h1 *ngIf="sform" class="d-block mx-auto">Create Your Account</h1>
+                    <h1 *ngIf="forgotpwd" class="d-block mx-auto">Create your new Password</h1>
+                    <button class="btn btn-danger text-decoration-none" data-bs-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" #loginform="ngForm" *ngIf="lform" novalidate>
+                        <div class="form-group">
+                            <label for="email">Your Email</label><br>
+                            <input type="text" name="email" id="email" class="form-control" required [class.is-invalid]="email.touched && email.invalid"
+                             #email="ngModel" ngModel>
+                            <small class="text-danger" [class.d-none]="email.valid || email.untouched">*Please enter your email</small>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="password">Your Password</label><br>
+                            <input type="password" name="password" id="password" class="form-control" required [class.is-invalid]="password.touched && password.invalid"
+                             #password="ngModel" ngModel>
+                             <small class="text-danger" [class.d-none]="password.untouched || password.valid">*Please enter your password</small>
+                        </div>
+                        <br>
+                        <p class="form-inline">
+                            <a (click)="gotoforgotpwd()" style="cursor:pointer;"><strong>Forgot Password?</strong></a>
+                            <button class="btn btn-lg btn-primary d-block mx-auto" (click)="getform(loginform)" data-bs-dismiss="modal" [disabled]="loginform.invalid">Login</button>
+                        </p>
+                        <br>
+                        <p class="text-center">Don't have an account?<a (click)="gotosignupform()" class="text-primary text-decoration-none" style="cursor:pointer;">
+                            <strong> Sign Up</strong></a></p>
+                    </form>
+                    <form action="" #forgotpwdform="ngForm" *ngIf="forgotpwd" novalidate>
+                        <div class="form-group">
+                            <label for="email">Your Email</label><br>
+                            <input type="text" name="email" id="email" class="form-control" required [class.is-invalid]="email.touched && email.invalid"
+                             #email="ngModel" ngModel>
+                            <small class="text-danger" [class.d-none]="email.valid || email.untouched">*Please enter your email</small>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="password">Create your new Password</label><br>
+                            <input type="password" name="password" id="password" class="form-control" minlength="8" required [class.is-invalid]="password.touched && password.invalid"
+                             #password="ngModel" ngModel>
+                             <div *ngIf="password.errors && password.touched">
+                                <small class="text-danger" *ngIf="password.errors.required">*Please enter your password</small>
+                                <small class="text-danger" *ngIf="password.errors.minlength">*Please enter a valid password(atleast 8 characters length)</small>
+                            </div>
+                        </div><br>
+                        <button class="btn btn-primary d-block mx-auto" (click)="updatepwd(forgotpwdform)" [disabled]="forgotpwdform.invalid">Confirm</button><br>
+                        <p class="d-flex justify-content-around">
+                            <a (click)="gotologinform()" class="text-primary text-decoration-underlin" style="cursor:pointer;"><strong> Login</strong></a>
+                            <a (click)="gotosignupform()" class="text-primary text-decoration-underline" style="cursor:pointer;"><strong>Sign Up</strong></a>
+                        </p>
+                    </form>
+                    <form action="" #signupform="ngForm" *ngIf="sform">
+                        <div class="form-group">
+                            <label for="name">Your Name</label><br>
+                            <input type="text" name="name" id="name" class="form-control" #name="ngModel" required [class.is-invalid]="name.touched && name.invalid" ngModel>
+                            <small class="text-danger" [class.d-none]="name.valid || name.untouched">*Please enter your name</small>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email">Your Email</label><br>
+                            <input type="email" name="email" id="email" class="form-control" #email="ngModel" 
+                            required [class.is-invalid]="email.touched && email.invalid" ngModel pattern="^(\w+)@(\w+)\.(\w)+$">
+                            <div *ngIf="email.errors && (email.touched)">
+                                <small class="text-danger" *ngIf="email.errors.required">*Please enter your email</small>
+                                <small class="text-danger" *ngIf="email.errors.pattern">*Please enter a valid Email #format(---@---.--)</small>
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="phone">Your Mobile Number</label><br>
+                            <input type="tel" name="phone" id="phone" class="form-control" #phone="ngModel" required 
+                            [class.is-invalid]="phone.touched && phone.invalid" ngModel pattern="^\d{10}$">
+                            <div *ngIf="phone.errors && (phone.touched)">
+                                <small class="text-danger" *ngIf="phone.errors.required">*Please enter your mobile number</small>
+                                <small class="text-danger" *ngIf="phone.errors.pattern">*Please enter a valid mobile number(must be 10 digits)</small>
+                            </div>
+                        </div><br>
+                        <div class="form-group">
+                            <label for="password">Your Password</label><br>
+                            <input type="password" name="password" id="password" class="form-control" required [class.is-invalid]="password.touched && password.invalid"
+                             #password="ngModel" ngModel minlength="8">
+                             <!-- <small class="text-danger" [class.d-none]="password.untouched || password.valid">*Please enter your password</small> -->
+                            <div *ngIf="password.errors && password.touched">
+                                <small class="text-danger" *ngIf="password.errors.required">*Please enter your password</small>
+                                <small class="text-danger" *ngIf="password.errors.minlength">*Please enter a valid password(atleast 8 characters length)</small>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-lg btn-primary d-block mx-auto" (click)="onsubmit(signupform)" data-bs-dismiss="modal" [disabled]="signupform.invalid">Sign in</button>
+                        <br>
+                        <p class="text-center">Already have an account?<a (click)="gotologinform()" class="text-primary text-decoration-none" style="cursor:pointer;">
+                            <strong> Login</strong></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

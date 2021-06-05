@@ -1,0 +1,84 @@
+
+.mainbody{
+    background:radial-gradient(pink,white);
+    animation: animate 5s linear 1s infinite alternate;
+   }
+   @keyframes animate{
+       0% {background:radial-gradient(#ff8882,white);}
+       30% {background:radial-gradient(#9ede73,white);}
+       60% {background:radial-gradient(#f2b4b4,white);}
+       100% {background:radial-gradient(#29bb89,white);}
+   }
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+.cimg{
+    height:400px;
+    width:100%;
+}
+.iconimg:hover{
+    border-color:none;
+    opacity:0.8;
+}
+.icons:hover{
+    opacity:0.8;
+}
+.iconimg{
+    border-radius:50%;
+}
+.jowaricon{
+    border-color:#81b214;
+    border-style:solid;
+}
+.icons{
+    text-decoration:none;
+    font-weight: bold;
+    font-size:large;
+}
+.card{
+    border:None;
+}
+@media screen and (min-width:700px){
+    .jowaricon{
+        height:170px;
+        width:170px;
+    }
+}
+@media screen and (min-width:576px){
+    .icons{
+        font-size:x-large;
+    }
+}
+@media screen and (max-width:410px){
+    .icons{
+        font-size:small;
+    }
+}
+@media screen and (max-width:720px){
+    .cimg{
+        height:200px;
+    }
+}
+.btn:hover{
+    transform:scale(1.05);
+}
+@media screen and (min-width:992px){
+    .jowaricon{
+        height:200px;
+        width:200px;
+    }
+}
+.types{
+    font-weight:bold;
+}
+@media screen and (min-width:768px){
+    .types{
+        font-size:x-large;
+        margin-left:50px;
+    }
+    .btn{
+        margin-left:100px;
+        font-size:20px;
+
+    }
+}
